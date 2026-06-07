@@ -1,0 +1,12 @@
+.dart_tool/
+build/
+.flutter-plugins-dependencies
+.metadata
+pubspec.lock
+.idea/
+*.iml
+*.jks
+*.keystore
+.DS_Store
+Thumbs.db
+releases/

@@ -1,0 +1,68 @@
+name: v_epsilon
+description: "V Epsilon — social client (Flutter) connecting to Go server"
+publish_to: 'none'
+version: 0.7.16+30
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  shared_preferences: ^2.3.3
+  provider: ^6.1.2
+  intl: ^0.19.0
+  cached_network_image: ^3.4.1
+  # In-app updater
+  package_info_plus: ^8.1.2
+  path_provider: ^2.1.5
+  open_filex: ^4.5.0
+  permission_handler: ^11.3.1
+  # Posts / profile
+  image_picker: ^1.1.2
+  image_cropper: ^8.0.0
+  share_plus: ^10.1.2
+  web_socket_channel: ^3.0.1
+  url_launcher: ^6.3.1
+  # Voice posts + playback — now works with Flutter 3.32
+  record: ^6.0.0
+  just_audio: ^0.9.40
+  # Android local push notifications
+  flutter_local_notifications: ^17.2.3
+
+  http_parser: any
+  webview_flutter: ^4.13.1
+  fl_chart: ^1.1.0
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^6.0.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  # All UI assets bundled — minimizes network usage at runtime
+  assets:
+    - assets/icons/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Inter-Black.ttf
+          weight: 900
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700
