@@ -6,7 +6,7 @@ import 'package:record/record.dart';
 import '../theme.dart';
 
 /// Hold-to-record voice button. Max 120 seconds. Outputs AAC-LC in an .m4a
-/// container — small files and widely compatible with Android media players.
+/// container - small files and widely compatible with Android media players.
 ///
 /// Gestures:
 ///   tap       → toast asking user to hold
@@ -115,7 +115,7 @@ class _VoiceRecordButtonState extends State<VoiceRecordButton>
     if (path != null && !_cancelled && secs >= 1) {
       widget.onComplete?.call(path, secs);
     } else if (path != null) {
-      // Cancelled or too short — scrub the file so we don't leak temp data.
+      // Cancelled or too short - scrub the file so we don't leak temp data.
       try {
         File(path).deleteSync();
       } catch (_) {}

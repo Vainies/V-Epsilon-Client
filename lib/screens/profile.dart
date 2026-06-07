@@ -252,7 +252,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         case 'report':
           // Reporting a user is modeled as flagging one of their posts later.
           messenger.showSnackBar(SnackBar(
-              content: const Text('User reports coming soon — report specific posts for now.'),
+              content: const Text('User reports coming soon - report specific posts for now.'),
               backgroundColor: VE.bgElevated));
           break;
         case 'admin_ban':
@@ -285,7 +285,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           if (reason == null) return;
           if (reason.trim() != u.handle) {
             messenger.showSnackBar(const SnackBar(
-                content: Text('Confirmation mismatch — account NOT deleted'),
+                content: Text('Confirmation mismatch - account NOT deleted'),
                 backgroundColor: VE.pink));
             return;
           }
@@ -469,7 +469,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  // Full-width background section — spans name, handle, status, bio,
+  // Full-width background section - spans name, handle, status, bio,
   // stats, and action row.
   Widget _profileBody(AppUser u) {
     final hasBg = u.profileBgUrl.isNotEmpty;

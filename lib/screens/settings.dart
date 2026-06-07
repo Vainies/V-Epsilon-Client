@@ -204,7 +204,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         if (_pendingBannerPath != null || _pendingAvatarPath != null || _pendingBgPath != null)
           Padding(
             padding: const EdgeInsets.only(top: 8),
-            child: Text('Preview shown — save to apply changes',
+            child: Text('Preview shown - save to apply changes',
                 style: const TextStyle(color: VE.emerald, fontSize: 10, fontWeight: FontWeight.w700)),
           ),
       ],
@@ -670,7 +670,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     if (theme.isEmpty) { _flash('No theme colors set'); return; }
     try {
       await context.read<Api>().updateMe({'profile_theme': theme});
-      _flash('Profile colors saved — others see them on your profile');
+      _flash('Profile colors saved - others see them on your profile');
     } catch (e) {
       _flash('Failed: $e');
     }

@@ -6,7 +6,7 @@ import 'models.dart';
 /// Wraps flutter_local_notifications so other code doesn't need to know about
 /// the plugin. Also centralizes permission requests and user preferences.
 ///
-/// Designed around Android-only display for now. We don't use FCM — events
+/// Designed around Android-only display for now. We don't use FCM - events
 /// come via our own WebSocket and we raise a local notification when the app
 /// is backgrounded. Notifications show even when the app is foregrounded so
 /// the user gets feedback without watching the bell.

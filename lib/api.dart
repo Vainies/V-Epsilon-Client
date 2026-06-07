@@ -78,7 +78,7 @@ class Api extends ChangeNotifier {
   }
 
   /// URL to share a profile. ALWAYS uses the canonical public URL, never the
-  /// LAN address the local probe picked — otherwise shared links won't
+  /// LAN address the local probe picked - otherwise shared links won't
   /// resolve for anyone outside your network.
   String webUrlFor(String handle) =>
       '${_canonicalPublicUrl()}/redirect/app/u/$handle';
@@ -566,7 +566,7 @@ class Api extends ChangeNotifier {
     return jsonDecode(res.body) as Map<String, dynamic>;
   }
 
-  /// Full admin dashboard payload — single request, cheap on the server.
+  /// Full admin dashboard payload - single request, cheap on the server.
   /// Returns the raw map so the dashboard screen can pluck panels it needs.
   Future<Map<String, dynamic>> adminDashboard() async {
     final res = await http.get(_u('/api/v1/admin/dashboard'), headers: _headers(json: false));

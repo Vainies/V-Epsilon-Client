@@ -498,7 +498,7 @@ class _AppShellState extends State<AppShell> {
                     context, MaterialPageRoute(builder: (_) =>  const SettingsScreen()));
               }),
             // Admin-only: server dashboard. Shown for the hard-coded 'vain'
-            // handle — server still enforces the real admin check on the
+            // handle - server still enforces the real admin check on the
             // underlying endpoint, so this is just UX affordance.
             if (api.isAuthed && api.handle == 'vain')
               _drawerItem(Icons.dashboard_rounded, 'Admin dashboard', () {
@@ -598,7 +598,7 @@ class _AppShellState extends State<AppShell> {
     if (!mounted) return;
 
     if (info == null) {
-      // No update — show a similar square "up to date" dialog that dismisses
+      // No update - show a similar square "up to date" dialog that dismisses
       // on tap/outside.
       showDialog(
         context: context,
@@ -870,7 +870,7 @@ class _AppShellState extends State<AppShell> {
       return;
     }
     if (!api.online) {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No connection — can\'t post')));
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('No connection - can\'t post')));
       return;
     }
     Navigator.push(

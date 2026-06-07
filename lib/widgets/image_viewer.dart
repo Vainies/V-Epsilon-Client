@@ -13,7 +13,7 @@ class ImageViewer extends StatelessWidget {
    const ImageViewer({super.key, required this.url, this.heroTag});
 
   /// Convenience push. Returns a Future that completes when the viewer is
-  /// dismissed — callers don't need to care about the result.
+  /// dismissed - callers don't need to care about the result.
   static Future<void> open(BuildContext context,
       {required String url, String? heroTag}) {
     return Navigator.of(context).push(
@@ -60,7 +60,7 @@ class ImageViewer extends StatelessWidget {
               onTap: () => Navigator.of(context).maybePop(),
             ),
           ),
-          // The image itself — pinch/zoom, doesn't forward taps so the user
+          // The image itself - pinch/zoom, doesn't forward taps so the user
           // can still pan without closing.
           Positioned.fill(
             child: InteractiveViewer(
@@ -74,7 +74,7 @@ class ImageViewer extends StatelessWidget {
               ),
             ),
           ),
-          // Close button — always accessible, respects SafeArea.
+          // Close button - always accessible, respects SafeArea.
           Positioned(
             top: 0,
             right: 0,

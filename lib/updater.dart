@@ -157,7 +157,7 @@ class Updater {
       // Verify file size
       final size = await file.length();
       if (info.apkSize > 0 && size < info.apkSize - 1024) {
-        // Incomplete — likely dropped connection
+        // Incomplete - likely dropped connection
         if (kDebugMode) debugPrint('[updater] incomplete: got $size / ${info.apkSize}');
         return null;
       }

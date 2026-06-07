@@ -191,7 +191,7 @@ class _PostCardState extends State<PostCard> {
     final api = context.read<Api>();
     final isOwn = api.handle == widget.post.author.handle;
     // Show admin/mod actions if the stored handle equals 'vain' (owner seed).
-    // Server enforces the real check — this is just UX affordance.
+    // Server enforces the real check - this is just UX affordance.
     final adminHint = api.handle == 'vain';
 
     final action = await showModalBottomSheet<String>(
@@ -276,7 +276,7 @@ class _PostCardState extends State<PostCard> {
           if (reason == null) return;
           await api.flagPost(widget.post.id, reason);
           messenger.showSnackBar(const SnackBar(
-              content: Text('Reported — a moderator will review'),
+              content: Text('Reported - a moderator will review'),
               backgroundColor: VE.emerald));
           break;
         case 'mute':
@@ -287,7 +287,7 @@ class _PostCardState extends State<PostCard> {
           } else {
             await api.mute(widget.post.author.handle);
             messenger.showSnackBar(const SnackBar(
-                content: Text('User muted — you won\'t see their posts'),
+                content: Text('User muted - you won\'t see their posts'),
                 backgroundColor: VE.emerald));
           }
           break;
@@ -324,7 +324,7 @@ class _PostCardState extends State<PostCard> {
         case 'admin_delete':
           final ok = await veConfirm(context,
               title: 'Delete post?',
-              body: 'Admin action — cannot be undone.',
+              body: 'Admin action - cannot be undone.',
               icon: Icons.shield_rounded,
               iconColor: VE.orange,
               confirmLabel: 'Delete',
@@ -473,7 +473,7 @@ class _PostCardState extends State<PostCard> {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          // Placeholder gradient as thumbnail — replaced by real media_url later
+          // Placeholder gradient as thumbnail - replaced by real media_url later
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(

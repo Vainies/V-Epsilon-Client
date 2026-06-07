@@ -7,7 +7,7 @@ import '../widgets/post_card.dart';
 import 'post_detail.dart';
 import 'profile.dart';
 
-/// Reposts tab — shows posts the current user has reposted.
+/// Reposts tab - shows posts the current user has reposted.
 /// When user taps a card it opens the post detail. Original author is shown
 /// in the card; a subtle header line "<you> reposted" is rendered above.
 class RepostsScreen extends StatefulWidget {

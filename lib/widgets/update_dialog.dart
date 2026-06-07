@@ -5,8 +5,8 @@ import 'common.dart';
 
 /// Dialog that offers to download + install a new version.
 /// Shows progress during download, hands off to Android installer at the end.
-/// [isRequired] — LATER hidden, only UPDATE NOW.
-/// [isEmergency] — same as required but with critical red styling.
+/// [isRequired] - LATER hidden, only UPDATE NOW.
+/// [isEmergency] - same as required but with critical red styling.
 class UpdateDialog extends StatefulWidget {
   final Updater updater;
   final ReleaseInfo info;

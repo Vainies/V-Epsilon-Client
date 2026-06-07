@@ -194,7 +194,7 @@ class VECard extends StatelessWidget {
   }
 }
 
-/// Primary button — white pill.
+/// Primary button - white pill.
 class VEPrimaryButton extends StatelessWidget {
   final String label;
   final VoidCallback? onPressed;

@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) { _fillingScreen = false; return; }
       if (!_scrollCtrl.hasClients) {
-        // Scroll controller not attached yet — try again next frame
+        // Scroll controller not attached yet - try again next frame
         WidgetsBinding.instance.addPostFrameCallback((__) {
           if (!mounted) { _fillingScreen = false; return; }
           if (!_scrollCtrl.hasClients) { _fillingScreen = false; return; }
@@ -199,7 +199,7 @@ class _HomeScreenState extends State<HomeScreen> {
       children: [
         Icon(Icons.cloud_off_rounded, size: 14, color: VE.orange),
         SizedBox(width: 8),
-        Text('No connection — some features unavailable',
+        Text('No connection - some features unavailable',
             style: TextStyle(color: VE.orange, fontSize: 12, fontWeight: FontWeight.w700)),
       ],
     ),
